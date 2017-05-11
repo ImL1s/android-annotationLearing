@@ -26,14 +26,14 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        insert(new Dog("豆豆", 8, (byte) 'f'));
-        List<Dog> dogs = select();
 
-        for (Dog dog : dogs)
-        {
-            Log.d(MainActivity.class.getSimpleName(), dog.toString());
-        }
+                insert(new Dog("豆豆", 8, (byte) 'f'));
+                List<Dog> dogs = select();
 
+                for (Dog dog : dogs)
+                {
+                    Log.d(MainActivity.class.getSimpleName(), dog.toString());
+                }
     }
 
     void insert(Dog dog)
